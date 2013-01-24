@@ -3,6 +3,8 @@ import sys
 import urlparse
 
 # regex query to parse one apache log entry
+# modified version of the query that can be found at the following blogpost
+# http://scalability.org/?p=3802
 APACHE_LOG_ENTRY = re.compile(
     r'(\d+.\d+.\d+.\d+)\s+(\S+)\s+(\S+)\s+\[(\d+\/\S+\/\d+):(\d+:\d+:\d+)' +
     r'\s+([-+]{0,1}\d+)\]\s+\"(\S+)\s+(\S+)\s+HTTP\/\d+\.\d+\"\s+(\d+)\s+' +
