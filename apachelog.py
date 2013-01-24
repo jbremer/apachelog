@@ -1,5 +1,4 @@
 import re
-import sys
 import urlparse
 
 # regex query to parse one apache log entry
