@@ -17,7 +17,7 @@ class Request:
         self.time = result[4]
         self.method = result[6]
         self.uri = result[7]
-        self.response_code = result[6]
+        self.response_code = result[8]
         self.content_length = int(result[9]) if result[9] != '-' else 0
         self.referer = result[10] if result[10] != '-' else None
         self.user_agent = result[11] if result[11] != '-' else None
